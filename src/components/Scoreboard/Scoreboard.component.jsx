@@ -10,8 +10,8 @@ const Scoreboard = () => {
         <h2>Scissors</h2>
       </div>
       <div className="score">
-        <p className="score-title">score</p>
-        <p className="score-amt">13</p>
+        <p className="score-title">SCORE</p>
+        <p className="current-score">13</p>
       </div>
     </StyledScoreboard>
   );
