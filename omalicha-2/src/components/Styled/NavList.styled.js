@@ -6,7 +6,7 @@ const StyledNavlist = styled.nav`
   list-style-type: none;
 
   li {
-    margin-right: 2rem;
+    margin-left: 2rem;
   }
 
   .icon {
@@ -14,6 +14,7 @@ const StyledNavlist = styled.nav`
   }
 
   @media only screen and (max-width: 600px) {
+    z-index: 100;
     flex-direction: column;
     align-items: end;
     position: absolute;

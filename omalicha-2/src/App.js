@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop.component";
 import SharedLayout from "./components/SharedLayout.component";
+import Homepage from "./pages/Homepage/Homepage.component";
 
 function App() {
   return (
@@ -9,7 +10,9 @@ function App() {
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<SharedLayout />}></Route>
+          <Route path="/" element={<SharedLayout />}>
+            <Route index path="/" element={<Homepage />}></Route>
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>
