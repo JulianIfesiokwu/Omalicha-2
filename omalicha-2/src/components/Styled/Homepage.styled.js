@@ -3,9 +3,10 @@ import styled from "styled-components";
 const StyledHomepage = styled.div`
   .carousel {
     width: 100%;
-    height: 50vh;
+    height: 90vh;
+    overflow: hidden;
     position: relative;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
   }
 
   .carousel::hover {
@@ -43,7 +44,6 @@ const StyledHomepage = styled.div`
   }
   .img-container {
     width: 100%;
-    height: 100%;
     cursor: pointer;
 
     img {
@@ -56,7 +56,7 @@ const StyledHomepage = styled.div`
   .shop {
     width: 10%;
     position: absolute;
-    top: 90%;
+    top: 70%;
     right: 50%;
     transform: translate(-50%, -50%);
   }

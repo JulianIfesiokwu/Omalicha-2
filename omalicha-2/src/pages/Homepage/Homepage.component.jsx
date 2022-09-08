@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 import Button from "../../components/Button/Button.component.jsx";
 import Welcome from "../../components/Welcome/Welcome.component.jsx";
+import Services from "../../components/Services/Services.component.jsx";
 import carouselImages from "../../data.js";
 
 import StyledHomepage from "../../components/Styled/Homepage.styled";
@@ -49,6 +50,7 @@ const Homepage = () => {
         />
       </div>
       <Welcome />
+      <Services />
     </StyledHomepage>
   );
 };

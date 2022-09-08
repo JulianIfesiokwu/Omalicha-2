@@ -2,13 +2,13 @@ const carouselImages = [
   {
     id: 1,
     source:
-      "https://images.pexels.com/photos/973401/pexels-photo-973401.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/973401/pexels-photo-973401.jpeg?auto=compress&cs=tinysrgb&w=640&h=427&dpr=2",
     title: "shop now",
   },
   {
     id: 2,
     source:
-      "https://images.pexels.com/photos/1399073/pexels-photo-1399073.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/1049687/pexels-photo-1049687.jpeg?auto=compress&cs=tinysrgb&w=640&h=427&dpr=2",
     title: "explore",
   },
   {
