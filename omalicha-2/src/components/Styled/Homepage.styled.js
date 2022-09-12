@@ -9,20 +9,13 @@ const StyledHomepage = styled.div`
     margin-bottom: 1rem;
   }
 
-  .carousel::hover {
-    .forward-btn,
-    .back-btn {
-      display: block;
-    }
-  }
-
   .back-btn {
     position: absolute;
     left: 4rem;
     top: 50%;
     border-radius: 50%;
     background: rgba(0, 0, 0, 0.1);
-    padding: 1rem;
+    padding: 0.4rem;
     color: white;
     cursor: pointer;
   }
@@ -32,7 +25,7 @@ const StyledHomepage = styled.div`
     top: 50%;
     border-radius: 50%;
     background: rgba(0, 0, 0, 0.1);
-    padding: 1rem;
+    padding: 0.4rem;
     color: white;
     cursor: pointer;
   }
@@ -67,6 +60,29 @@ const StyledHomepage = styled.div`
 
   .show {
     display: block;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .carousel {
+      height: auto;
+    }
+    .forward-btn {
+      right: 1rem;
+      top: 50%;
+    }
+    .back-btn {
+      left: 1rem;
+      top: 50%;
+    }
+
+    .shop {
+      width: 30%;
+      position: absolute;
+      top: 80%;
+      right: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 `;
 

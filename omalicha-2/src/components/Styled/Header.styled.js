@@ -5,11 +5,23 @@ const StyledHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
   .img-container {
+    margin-right: 0.5rem;
     width: 30px;
     img {
       width: 100%;
     }
+  }
+
+  .company-name {
+    font-size: 1.3rem;
+    font-family: var(--logo-font-family);
+    color: var(--logo-color);
   }
 
   .menu-icon {
@@ -17,13 +29,15 @@ const StyledHeader = styled.header`
   }
 
   @media only screen and (max-width: 600px) {
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     .menu-icon {
       display: block;
     }
 
     .open {
-      dipslay: block;
+      display: flex;
+      flex-direction: column;
+      padding: 0 1rem;
     }
 
     .close {

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 import Button from "../../components/Button/Button.component.jsx";
 import Welcome from "../../components/Welcome/Welcome.component.jsx";
@@ -10,6 +10,13 @@ import StyledHomepage from "../../components/Styled/Homepage.styled";
 const Homepage = () => {
   const [current, setCurrent] = useState(0);
   const length = carouselImages.length;
+
+  useEffect(() => {
+    let slider = setInterval(() => {
+      setCurrent(nextSlide);
+    }, 3000);
+    return () => clearInterval(slider);
+  });
 
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
@@ -26,7 +33,7 @@ const Homepage = () => {
   return (
     <StyledHomepage>
       <div className="carousel">
-        <MdArrowBackIosNew size="35" onClick={prevSlide} className="back-btn" />
+        <MdArrowBackIosNew size="60" onClick={prevSlide} className="back-btn" />
         <div className="img-container">
           {carouselImages.map((image, index) => {
             const { source, id, title } = image;
@@ -44,7 +51,7 @@ const Homepage = () => {
           })}
         </div>
         <MdArrowForwardIos
-          size="35"
+          size="60"
           onClick={nextSlide}
           className="forward-btn"
         />

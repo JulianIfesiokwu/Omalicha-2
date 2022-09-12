@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import NavList from "../NavList/Navlist.component";
-import { GrMenu, GrClose } from "react-icons/gr";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 import StyledHeader from "../Styled/Header.styled";
 import logo from "../../assets/logo.jpeg";
@@ -10,18 +10,23 @@ const Header = () => {
 
   return (
     <StyledHeader>
-      <div className="img-container">
-        <img src={logo} alt="logo" />
+      <div className="logo">
+        <div className="img-container">
+          <img src={logo} alt="logo" />
+        </div>
+        <p className="company-name">Omalicha</p>
       </div>
       {menu ? (
-        <GrMenu
+        <AiOutlineMenu
           size="35"
+          color="#bc4864"
           className="menu-icon"
           onClick={() => openMenu(!menu)}
         />
       ) : (
-        <GrClose
+        <AiOutlineClose
           size="35"
+          color="#bc4864"
           className="menu-icon"
           onClick={() => openMenu(!menu)}
         />
