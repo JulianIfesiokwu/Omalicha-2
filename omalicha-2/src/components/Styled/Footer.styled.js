@@ -26,12 +26,40 @@ const StyledFooter = styled.div`
   .col-four {
     padding: 1rem;
     width: 100%;
-    text-align: center;
+  }
+
+  .col-two,
+  .col-three,
+  .col-four {
+    border-left: 2px solid var(--logo-color);
+  }
+
+  .title {
+    text-transform: uppercase;
+    color: var(--font-color);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 27px;
+  }
+
+  .footer-info {
+    color: var(--font-color);
+  }
+
+  .footer-info::hover {
+    color: var(--logo-color);
   }
 
   @media only screen and (max-width: 600px) {
     flex-direction: column;
     padding: 1rem;
+
+    .col-two,
+    .col-three,
+    .col-four {
+      border-left: none;
+      text-align: center;
+    }
   }
 `;
 

@@ -18,18 +18,18 @@ const Footer = () => {
       </div>
       <div className="col-two">
         <p className="title">About Us</p>
-        <p>Book online</p>
+        <p className="footer-info">Book online</p>
       </div>
       <div className="col-three">
         <p className="title">Services</p>
-        <p className="hair">Hair</p>
-        <p className="nails">Nails</p>
-        <p className="make-up">Make up</p>
+        <p className="footer-info">Hair</p>
+        <p className="footer-info">Nails</p>
+        <p className="footer-info">Make up</p>
       </div>
       <div className="col-four">
         <p className="title">Contact</p>
-        <p className="email">abc@gmail.com</p>
-        <p className="phone">090 1234 13456</p>
+        <p className="footer-info">abc@gmail.com</p>
+        <p className="footer-info">090 1234 13456</p>
       </div>
     </StyledFooter>
   );

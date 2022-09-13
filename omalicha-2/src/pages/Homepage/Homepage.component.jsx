@@ -11,12 +11,12 @@ const Homepage = () => {
   const [current, setCurrent] = useState(0);
   const length = carouselImages.length;
 
-  useEffect(() => {
-    let slider = setInterval(() => {
-      setCurrent(nextSlide);
-    }, 3000);
-    return () => clearInterval(slider);
-  });
+  // useEffect(() => {
+  //   let slider = setInterval(() => {
+  //     setCurrent(nextSlide);
+  //   }, 3000);
+  //   return () => clearInterval(slider);
+  // });
 
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
