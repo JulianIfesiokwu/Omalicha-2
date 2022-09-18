@@ -4,6 +4,25 @@
 /node_modules
 /.pnp
 .pnp.js
+../FrontEnd Mentor Templates/
+        ../Health-Wellness-website/
+        ../Rock-Paper-Scissors-Game/
+        ../accordion-menu/
+        ../altschool-opensource-names/
+        ../grocery-bud/
+        ../menu/
+        ../nav/
+        ../reviews-app/
+        ../rock-paper-scissors-master.zip
+        ../rock-paper-scissors-master/
+        ../shoppers-fun/
+        ../shopping-cart/
+        ../sidebar-modal/
+        ../slider-project/
+        ../stripe-submenus/
+        ../tabs-menu/
+        ../tour app/
+        ../travel-app/
 
 # testing
 /coverage
